@@ -1,30 +1,40 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {fetchVenues} from 'src/actions/Actions';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { fetchVenues } from 'src/actions/Actions';
 
 class SearchBar extends Component {
 
+  // local state to make a controlled input
   state = {
-    near: null
+    near: ''
   };
 
-  handleChange(event) {
-    this.setState({near: event.target.value});
+  // input ref to access the DOM element
+  inputRef = React.createRef();
+
+  componentDidMount() {
+    // for usability purposes, focus the search input
+    // after loading the component
+    this.inputRef.current.focus();
   }
 
   render() {
+    const { near } = this.state;
     return (
-      <form onSubmit={e => this._handleSubmit(e)}>
-        <div className="form-group row">
-          <div className="col-xl">
-            <input type="text"
+      <form onSubmit={e => this._handleSubmit(e)} style={formStyle.form}>
+        <div className='row'>
+          <div className='col'>
+            <input type='text'
+                   ref={this.inputRef}
                    style={formStyle.inputField}
-                   className="form-control"
-                   placeholder="Type a location name to search, ex: Tokyo, Chicago, New York..."
-                   onChange={e => this.handleChange(e)}/>
+                   className='form-control'
+                   placeholder='Tokyo, Chicago, New York...'
+                   onChange={e => this._handleChange(e)}/>
           </div>
-          <div className="col-xs-3">
-            <button className="btn btn-primary" type="submit">Search</button>
+          <div className='col'>
+            <button disabled={!near} type='submit' className='btn btn-primary'>
+              Search
+            </button>
           </div>
         </div>
       </form>
@@ -33,14 +43,20 @@ class SearchBar extends Component {
 
   _handleSubmit(event) {
     event.preventDefault();
-    this.props.dispatch(fetchVenues({
-      near: this.state.near
-    }));
+    const { near } = this.state;
+    if (near) {
+      this.props.dispatch(fetchVenues({ near }));
+    }
+  }
+
+  _handleChange(event) {
+    this.setState({ near: event.target.value });
   }
 }
 
 const formStyle = {
-  inputField: {marginRight: 8}
+  form: { marginBottom: '1em' },
+  inputField: { marginRight: '1em' }
 };
 
 export default connect()(SearchBar);

@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
 import SearchBar from 'src/components/SearchBar/SearchBar';
-// import Header from 'src/components/Header/Header';
+import Header from 'src/components/Header/Header';
 
-import VenuesList from 'src/containers/VenuesList';
+import VenuesList from 'src/components/Venues/VenuesList';
 import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -12,6 +12,7 @@ class App extends Component {
       <div className="container">
         <div className="row" style={stylesApp}>
           <div className="col-md">
+            <Header/>
             <SearchBar/>
             <VenuesList/>
           </div>

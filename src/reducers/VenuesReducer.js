@@ -1,5 +1,7 @@
 import * as types from 'src/actions/Types'
 
+// Why a function to return the initial state?
+// A: Easier to implement a "reset state" feature.
 const initialState = () => ({
   list: [],
   fetching: true,
