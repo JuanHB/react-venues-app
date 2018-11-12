@@ -6,7 +6,7 @@ class SearchBar extends Component {
 
   // local state to make a controlled input
   state = {
-    near: ''
+    near: null
   };
 
   // input ref to access the DOM element
@@ -55,7 +55,7 @@ class SearchBar extends Component {
 }
 
 const formStyle = {
-  form: { marginBottom: '1em' },
+  form: { marginTop: '1em', marginBottom: '1em' },
   inputField: { marginRight: '1em' }
 };
 

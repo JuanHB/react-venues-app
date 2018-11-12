@@ -1,6 +1,6 @@
 import axios from 'axios';
 import * as types from './Types';
-import createApiUrl from 'src/utils/createApiUrl';
+import { createApiUrl } from 'src/utils/createApiUrl';
 
 /**
  * Creating the API Endpoint to make the venues list request

@@ -1,4 +1,4 @@
 export const createMapsUrl = address => (
-  `https://www.google.com/maps/search/?api=1&query=${address}`
+  address ? `https://www.google.com/maps/search/?api=1&query=${address}` : null
 );
 
