@@ -1,13 +1,13 @@
 {
-  "main.js": "/static/js/main.66da1aac.chunk.js",
-  "main.js.map": "/static/js/main.66da1aac.chunk.js.map",
-  "static/css/1.63fcc65a.chunk.css": "/static/css/1.63fcc65a.chunk.css",
-  "static/js/1.304ae9bd.chunk.js": "/static/js/1.304ae9bd.chunk.js",
-  "static/js/1.304ae9bd.chunk.js.map": "/static/js/1.304ae9bd.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/1.63fcc65a.chunk.css.map": "/static/css/1.63fcc65a.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.f073cd85d4bebffe77d73599472ab2a8.js": "/precache-manifest.f073cd85d4bebffe77d73599472ab2a8.js",
-  "service-worker.js": "/service-worker.js"
+  "main.js": "/react-venues-app/static/js/main.6cc3f205.chunk.js",
+  "main.js.map": "/react-venues-app/static/js/main.6cc3f205.chunk.js.map",
+  "static/css/1.63fcc65a.chunk.css": "/react-venues-app/static/css/1.63fcc65a.chunk.css",
+  "static/js/1.304ae9bd.chunk.js": "/react-venues-app/static/js/1.304ae9bd.chunk.js",
+  "static/js/1.304ae9bd.chunk.js.map": "/react-venues-app/static/js/1.304ae9bd.chunk.js.map",
+  "runtime~main.js": "/react-venues-app/static/js/runtime~main.56877413.js",
+  "runtime~main.js.map": "/react-venues-app/static/js/runtime~main.56877413.js.map",
+  "static/css/1.63fcc65a.chunk.css.map": "/react-venues-app/static/css/1.63fcc65a.chunk.css.map",
+  "index.html": "/react-venues-app/index.html",
+  "precache-manifest.e40c8001f76c55376bcc1bc3b610c242.js": "/react-venues-app/precache-manifest.e40c8001f76c55376bcc1bc3b610c242.js",
+  "service-worker.js": "/react-venues-app/service-worker.js"
 }
