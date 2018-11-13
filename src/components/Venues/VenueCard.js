@@ -1,24 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { createMapsUrl } from 'src/utils/createMapsUrl'
+import MapsLink from 'src/components/MapsLink/MapsLink';
 
 const VenueCard = ({ item }) => {
 
   const { venue } = item;
   const address = venue.location.formattedAddress.join(', ');
   const categories = venue.categories.map(c => c.shortName).join(', ');
-
-  const _renderMapsLink = address => {
-    return (
-      <a
-        target='_blank'
-        className='card-link'
-        rel='noopener noreferrer'
-        href={createMapsUrl(address)}>
-        How to get there
-      </a>
-    )
-  };
 
   return (
     <div className='card' style={stylesVenueCard.card}>
@@ -28,7 +16,7 @@ const VenueCard = ({ item }) => {
         <p className='card-text'>
           {address}
         </p>
-        {_renderMapsLink(address)}
+        <MapsLink address={address}/>
       </div>
     </div>
   );

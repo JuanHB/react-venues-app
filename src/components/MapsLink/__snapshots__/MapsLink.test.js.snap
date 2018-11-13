@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly MapsLink component 1`] = `
+<a
+  className="card-link"
+  href="https://www.google.com/maps/search/?api=1&query=New York, NY"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  How to get there
+</a>
+`;
