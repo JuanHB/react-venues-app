@@ -1,4 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Integrated with [Foursquare API](https://developer.foursquare.com/), the app asks for your current location and shows the 
+closest venues.
+
+You may change the location by typing a different place on the search bar. 
+It must be a valid place name. 
+
+## Required .env variables
+
+#### `REACT_APP_API_CLIENT_ID`
+#### `REACT_APP_API_CLIENT_SECRET`
+
+Both are provided by the Foursquare Developer Login, you need to create an Foursquare App to receive the tokens.
 
 ## Available Scripts
 
